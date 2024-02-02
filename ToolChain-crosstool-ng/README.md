@@ -62,10 +62,13 @@ When it comes to building cross-compilers, crosstool-ng stands out as a quick an
 3. **open menuconfig for Raspberry Pi 3 Toolchain Configuration Options**   
    ```bash   
    bin/ct-ng menuconfig
+    ```
     ![Screenshot_12](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/c303a279-b49a-4f34-a2e1-575c723bad11)
+
 - Paths and misc options
     - Check "Try features marked as EXPERIMENTAL"
     - Set "Prefix directory" to "/opt/cross/x-tools/${CT_TARGET}"
+
     ![Screenshot_22](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/c2b07ff9-3018-4437-a5e6-32a497d4585f)
 
 - Target options
@@ -77,33 +80,41 @@ When it comes to building cross-compilers, crosstool-ng stands out as a quick an
     - Set "Use specific FPU" to "vfp"
     - Set "Floating point" to "hardware (FPU)"
     - Check "Use EABI"
+
     ![Screenshot_13](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/184a8e48-f412-4307-aaf9-0804857bad8d)
 
 - Toolchain options
     - Set "Tuple's vendor string" to "rpi"
+
     ![Screenshot_14](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/96399fb6-d316-4cde-979a-314c62148b68)    
 - Operating System
     - Set "Target OS" to "linux"
     - version of linux 6.4.16
+
     ![Screenshot_15](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/d8ac2888-4f2b-4dce-a9b5-96dc7dfd2508)
 - Binary utilities
     - Set "Binary format" to "ELF"
     - Set "binutils version" to "2.30"
+
     ![Screenshot_16](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/44415c8b-78b4-4152-bfac-b6a0dcb9a827)
 - C-library
     - Set "C library" to "glibc"
     - Set "glibc version" to "2.38"
+
     ![Screenshot_17](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/ca1f86ba-3e2c-4ba8-bd63-717a1bea2e00)    
+    
 - C compiler
     - Check "Show Linaro versions"
     - Set "gcc version" to "10.5.0"
     - Set "gcc extra config" to "--with-float=hard"
     - Check "Link libstdc++ statically into the gcc binary"
     - Check "C++" under "Additional supported   languages"
+
     ![Screenshot_18](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/03eea205-0a54-47ff-85ce-77ec37832ada)
 
 - Companion tools
     - Set m4,cmake,automake,autoconfig
+
     ![Screenshot_21](https://github.com/Mahmoud-Ismail98/Cmake-Moatasem-Elsayed/assets/63348980/c3f00d96-9304-4f46-b7e0-51d3a4e2024a)
 
 3. **Build toolchain**
